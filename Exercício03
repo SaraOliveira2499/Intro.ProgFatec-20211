@@ -1,0 +1,34 @@
+# Intro.ProgFatec-20211
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução à Programação - Exercício Casa 03</title>
+</head>
+<body>
+
+    <h1>Exercício 03</h1>
+    <p>Calcular a Equação do 2º Grau usando a Fórmula de Bhaskara.</p>
+   
+    <script>
+        let a = parseFloat(prompt('Informe o valor A:'))
+        let b = parseFloat(prompt('Informe o Valor B:'))
+        let c = parseFloat(prompt('Informe o Valor C:'))
+
+        let delta = b * b - 4 * a * c
+        let x1 = ( -b + Math.sqrt(delta)) / (2 * a)
+        let x2 = ( -b - Math.sqrt(delta)) / (2 * a)
+
+        document.write(`
+            <ul>
+                <li>Entradas: <b>${a}</b>, <b>${b}</b> e <b>${c}</b>.</li>
+                <li>X1: <b>${x1}</b>.</li>
+                <li>X2: <b>${x2}</br></li>
+            </ul>        
+        `)
+        
+    </script>
+</body>
+</html>
